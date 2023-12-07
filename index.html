@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbox Jamie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="logo-container"">
+            <img src="chatbox_elements/chatbox_elements_/logo.png" alt="logo" class="logo-icon">
+            <h1>LOGO HERE</h1>
+        </div>
+    </header>
+
+    <div class="main-container">
+    <div class="chatbox-container">
+        <div class="chatbox-title">
+            <h1>ChatBox</h1>
+        </div>
+
+        <div class="chat-container">
+            <div class="chatbot">
+                <img src="chatbox_elements/chatbox_elements_/profile.png" alt="profile icon" class ="profile-icon">
+                <p class="chatbot-name">Jamie</p>
+            </div>
+
+           <div class="message-wrapper">
+                <div class="message" id="message-container">
+                    <!-- message bubble will be added here -->
+                </div>
+
+                <div class="divider-line"></div>
+
+                <div class="input-container">
+                    <div class = "input-text">
+                        <input class="userInput" type="text" id="user-input" placeholder="Type a message..." onkeydown="handleKeyDown(event)">
+                    </div>
+                    <div class = "input-send-button"> 
+                        <button onclick="sendMessage()" class="send-button">
+                            <img src="chatbox_elements/chatbox_elements_/send.png" alt="Send icon" class="send-icon">
+                            Send
+                        </button>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            &copy; 2023 Copyrights. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src = "scripts.js"></script>
+</body>
+</html>
